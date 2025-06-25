@@ -122,7 +122,7 @@ form input{
     padding: 10px;
     border-radius: 30px;
 }
-.our-form button {
+ .special-button {
     position: absolute;
     top: 5px;
     right: 5px;
