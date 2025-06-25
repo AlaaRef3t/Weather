@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-Today</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <main>
+        <div class="main-nav-box">
+            <nav class="navbar navbar-expand-lg bg-body-dark ">
+                <div class="container main-pad">
+                    <a class="navbar-brand d-flex align-items-center p-0" href="#">
+                        <!-- <div class="img-inner"> -->
+                        <img src="images/logo@2x.png" alt="">
+
+                        <!-- </div> -->
+                        <div class="d-flex flex-column align-items-center  main-desc">
+                            <h1 class="main-title">Weather</h1>
+                            <p>tagline goes here</p>
+                        </div>
+
+                    </a>
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon fs-6"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Live Cameras</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Photos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+        <!-- end of navbar  -->
+
+        <!-- start of home section -->
+        <div class="bg-my-image">
+            <div class="container ">
+                <form class="our-form position-relative">
+                    <input type="text" placeholder="Find your Location... " id="searchInput">
+                    <button id="submitBtn" >Use Location <i class="fa-solid fa-location-dot"></i></button>
+                </form>
+            </div>
+        </div>
+        <!-- end of home section  -->
+
+        <!-- start of weather section  -->
+        <div class="main-weather-box">
+            <div class="container">
+                <div class="weather-inner  ">
+
+                    <div class="today-weather col-md-12 col-lg-4 ">
+                        <div class="header d-flex justify-content-between align-items-center">
+                            <p id="day1" class="day1 mb-0">--</p>
+                            <p id="date1" class="date mb-0">--</p>
+                        </div>
+                        <div class="day-content">
+                            <p id="city" class="city">--</p>
+                            <div class="degree d-flex flex-column ">
+                                <h1 id="temp1" class="number1">
+                                    --
+                                </h1>
+                                <div class="day-icon mb-4">
+                                    <img id="icon1" class="fs-2 mx-3" src="" alt="">
+                                </div>
+                                <p id="status1" class="day-status1">--</p>
+                                <div class="icons d-flex gap-4">
+                                    <span id="rain"><img src="images/icon-umberella@2x.png" alt=""> --%</span>
+                                    <span id="wind-dir"><img src="images/icon-compass@2x.png" alt=""> --</span>
+                                    <span id="wind-speed"><img src="images/icon-wind@2x.png" alt=""> --k/h</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="today-weather col-md-12 col-lg-4 ">
+                        <div class="header text-center">
+                            <p id="day2" class="day2 mb-0">--</p>
+                        </div>
+                        <div class="day-content  mt-5">
+                            <p class="other-day-icon text-center">
+                                <img id="icon2" src="" alt="">
+                            </p>
+                            <div class="degree text-center ">
+                                <h2 id="temp2" class="number2 fs-3">
+                                    --
+                                </h2>
+                                <small id="min2">--</small>
+                            </div>
+                            <p id="status2" class="day-status2 text-center">--</p>
+                        </div>
+                    </div>
+
+                    <div class="today-weather col-md-12 col-lg-4 ">
+                        <div class="header text-center">
+                            <p id="day3" class="day3 mb-0">--</p>
+                        </div>
+                        <div class="day-content mt-5">
+                            <p class="other-day-icon text-center">
+                                <img id="icon3" src="" alt="">
+                            </p>
+                            <div class="degree text-center ">
+                                <h2 id="temp3" class="number3 fs-3">
+                                    --
+                                </h2>
+                                <small id="min3">--</small>
+                            </div>
+                            <p id="status3" class="day-status3 text-center">--</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <form class="position-relative mb-3">
+                            <input class="contact-us" type="text" placeholder="Enter your Email to subscribe..."
+                                class="position-relative">
+                            <input type="button" value="subscribe">
+
+                        </form>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1">
+                        <div class="social-icons ">
+                            <a href="https://www.facebook.com/3laa.ref3t/">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="https://wa.me/+01070608699">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a href="https://github.com/AlaaRef3t">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.instagram.com/3laa_ref3t/">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <p>Copyright 2025 AR-WebDev. Designed by<strong><a class="text-decoration-underline fw-bolder" href="">
+                            AlaaRefaat.</a></strong> All rights reserved</p>
+
+            </div>
+
+        </footer>
+    </main>
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
