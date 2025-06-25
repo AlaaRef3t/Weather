@@ -132,6 +132,11 @@ form input{
     background: #009ad8;
     border-radius: 30px;
     color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.special-button:hover{
+    background: #167ba3;
 }
 
 
