@@ -57,7 +57,7 @@ function displayWeather(apiData) {
                         ${current.temp_c}°C
                     </h1>
                     <div class="day-icon mb-4">
-                        <img  class="fs-2 mx-3" src="https:${current.condition.icon}" alt="">
+                        <img  class="w-25 mx-3" src="https:${current.condition.icon}" alt="">
                     </div>
                     <p  class="day-status1">${current.condition.text}</p>
                     <div class="icons d-flex gap-4">
