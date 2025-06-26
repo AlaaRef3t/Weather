@@ -112,10 +112,7 @@ function displayWeather(apiData) {
 }
 
 
-// to set default location but i prefer to get the user location so i wrote 2 ways
 
-let StaticTown = "31.2001,29.9187"
-getWeather(StaticTown);
 
 
 // to get user location 
@@ -146,5 +143,6 @@ searchInput.addEventListener("input", function () {
 })
 
 
+getWeather("Alexandria");
 
 
