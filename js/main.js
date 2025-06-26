@@ -14,7 +14,7 @@ async function getWeather(cityName) {
         var result = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${cityName}&days=3`);
         var final = await result.json();
         console.log(final);
-        
+
         displayWeather(final);
     } catch (error) {
         weatherInner.innerHTML = `<p class="alert alert-danger "> Failed To Fetch , please enter a valid data </p>`
@@ -28,15 +28,15 @@ function displayWeather(apiData) {
 
     function getDayName(theDAy) {
         let date = new Date(theDAy);
-        return date.toLocaleDateString("en-US",{weekday:"long"})
+        return date.toLocaleDateString("en-US", { weekday: "long" })
     }
     function getMonthName(theMonth) {
         let date = new Date(theMonth);
-        return date.toLocaleDateString("en-US",{month:"long",day : "numeric"})
+        return date.toLocaleDateString("en-US", { month: "long", day: "numeric" })
     }
-    
-    
-    
+
+
+
     let forecastDays = apiData.forecast.forecastday;
     let current = apiData.current;
     let day1Data = forecastDays[0];
@@ -120,16 +120,16 @@ getWeather(StaticTown);
 
 // to get user location 
 
-    submitBtn.addEventListener("click", function (e) {
-        e.preventDefault();
+submitBtn.addEventListener("click", function (e) {
+    e.preventDefault();
     if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function (loc) {
-        let lat = loc.coords.latitude;
-        let lon = loc.coords.longitude;
-        let coords = lat + "," + lon;
-        getWeather(coords);
-    });
-}
+        navigator.geolocation.getCurrentPosition(function (loc) {
+            let lat = loc.coords.latitude;
+            let lon = loc.coords.longitude;
+            let coords = lat + "," + lon;
+            getWeather(coords);
+        });
+    }
 })
 
 
@@ -139,8 +139,8 @@ getWeather(StaticTown);
 searchInput.addEventListener("input", function () {
     globalSearch = searchInput.value.trim();
     if (globalSearch.length > 2) {
-    getWeather(globalSearch);
-        
+        getWeather(globalSearch);
+
     }
     console.log(globalSearch);
 })
